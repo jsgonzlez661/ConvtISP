@@ -57,5 +57,7 @@ To install PIL on Linux run the following command on the terminal:
 ## Contact
 
 For questions and suggestions write to:
+
 Jose Gonzalez
+
 _Email:_ <jgonzalez76@uc.edu.ve>

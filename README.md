@@ -1,6 +1,6 @@
 # ConvtISP
 
-_**Conv**er**t** **I**mages to **S**cientific **P**ublication_
+_**Conv**er**t** **I**mages for **S**cientific **P**ublication_
 
 ## Compatible Formats
 

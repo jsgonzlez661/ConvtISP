@@ -2,6 +2,8 @@
 
 _**Conv**er**t** **I**mages for **S**cientific **P**ublication_
 
+NEW VERSION 0.0.2
+
 ## Compatible Formats
 
 * __.jpeg .jpg__: JPEG (Joint Photographic Experts Group) is an algorithm designed to compress images with 24-bit depth grayscale. It is usually called JPG due to the extension it has in operating systems that only accept three letters of extension.

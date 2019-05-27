@@ -27,13 +27,17 @@ def save_file():
 
 def open_img(et):
     global img
+    et.configure(state='normal')
+    et.delete(0, 'end')
     img = filedialog.askopenfilename(title="Select Image", filetypes=(("Jpeg file", "*.jpeg"),("Jpg file", "*.jpg"),("Png file", "*.png"),("Tiff file", "*.tiff")))
     if(img!=None and img!=""):
         if(system()=="Windows"):
             img = img.replace("/","\\")
         et.insert(0, img)
+        et.configure(state='readonly')
     else: 
         messagebox.showwarning("Select Image","Image was not selected\nPlease select an image")
+        et.configure(state='readonly')
 
 
 
@@ -50,7 +54,7 @@ def convert_img(tipe):
                 image_change = image.convert('1', dither=Image.NONE)
             sfile=save_file()
             if(sfile!=None and sfile!=""):
-                image_change.save(sfile, dpi=(300,300))
+                image_change.save(sfile, dpi=(300,300), quality=100)
                 messagebox.showinfo("Saved Image", "Converted Image\nThank you for using the program")
             else:
                 messagebox.showwarning("Save Image","Image was not save\nPlease save image")
@@ -58,7 +62,7 @@ def convert_img(tipe):
             pass   
 
 def about_info():
-    messagebox.showinfo("About ConvtISP", "License: Free Software\nVersion: 0.0.1\nDate: 30/03/2019\nPython: 3.6.5\nTkinter: 8.6.6\nPillow: 5.2.0")
+    messagebox.showinfo("About ConvtISP", "License: Free Software\nVersion: 0.0.2\nDate: 27/05/2019\nPython: 3.6.5\nTkinter: 8.6.6\nPillow: 5.2.0")
 
 
 def open_doc():

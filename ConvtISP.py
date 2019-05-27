@@ -62,7 +62,8 @@ class myFrame(Frame):
         self.LFrame = LabelFrame(self.myFra, text="File Options", font=("Arial",10))
         self.LFrame.grid(row=0, column=0, padx=10)
         self.Et = ttk.Entry(self.LFrame, width=30)
-        self.Et.grid(row=0, column=0, padx=10, pady=5)   
+        self.Et.grid(row=0, column=0, padx=10, pady=5)
+        self.Et.configure(state='readonly')   
         self.bt1 = ttk.Button(self.LFrame, image=self.Img, text="Select Image", compound="left", command=lambda:open_img(self.Et))
         self.bt1.grid(row=1, column=0)     
         self.bt2 = ttk.Button(self.LFrame, text="Convert", image=self.Img_cont, compound="left", command=lambda:convert_img(self.tipe))
@@ -79,10 +80,11 @@ class myFrame(Frame):
         #----- Elements 2 END ----- 
 
         #--------------- Elements Option Archive END  ---------------
-     
-root = Tk()
-root.title("ConvtISP")
-root.resizable(0,0)
-frame = myFrame(root)
-frame.grid(row=0, column=0)
-root.mainloop()
+
+if __name__ == "__main__":     
+	root = Tk()
+	root.title("ConvtISP")
+	root.resizable(0,0)
+	frame = myFrame(root)
+	frame.grid(row=0, column=0)
+	root.mainloop()

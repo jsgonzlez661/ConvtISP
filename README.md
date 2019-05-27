@@ -32,6 +32,9 @@ To install PIL on Linux run the following command on the terminal:
     pip3 install Pillow
 ~~~
 
+## Download
+[Windows 32 - 64 bits](https://drive.google.com/file/d/1C6rCj_t7JvjmN17LCcYOkLm49sUn6K1C/view?usp=sharing)
+
 ## Screenshot
 
 
